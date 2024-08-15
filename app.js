@@ -55,7 +55,7 @@ app.use((error, req,res, next) => {
     res.status(status).json({message: message, data: data});
 }) 
 
-MONGO_URI = 'mongodb+srv://navneetvips57:6HPKOZjfgRI6b6zb@cluster0.jf2a7rl.mongodb.net/Social?retryWrites=true&w=majority&appName=Cluster0';
+MONGO_URI = '[mongodb_connection_string]';
 
 mongoose.connect(MONGO_URI)
 .then(result => {
